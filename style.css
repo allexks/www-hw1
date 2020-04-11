@@ -79,6 +79,7 @@ form.column > legend {
 
 .light input[type=submit]:hover {
     background-color: #354a5d;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -92,8 +93,8 @@ form.column > legend {
 .dark input[type=submit]:hover {
     background-color: #ececec;
     cursor: pointer;
+    color: #354a5d;
 }
-
 
 .dark input[type=checkbox] {
     /* Hide default checkbox */
