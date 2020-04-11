@@ -1,13 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="bg">
     <head>
         <meta charset="utf-8">
         <title>62136 Александър Игнатов - Домашно 1</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="panel">
+        <div class="panel light">
+            <h2>Потребителски панел</h2>
+            <p>За да се запишете за този курс създайте нов акаунт или влезте в съществуващ такъв.</p>
 
+            <form class="column left light" action="" method="post">
+                <legend>Регистрация</legend>
+                <input type="text" name="username" placeholder="Потребителско име" />
+                <input type="text" name="email" placeholder="E-mail" />
+                <input type="password" name="password" placeholder="Парола" />
+                <input type="password" name="password_repeated" placeholder="Потвърди паролата" />
+                <input type="submit" class="right" name="register" value="Регистрирай се" />
+            </form>
+
+            <form class="column right dark" action="" method="post">
+                <legend>Вход</legend>
+                <input type="text" name="username" placeholder="Потребителско име" />
+                <input type="password" name="password" placeholder="Парола" />
+                <input type="checkbox" name="remember">
+                <label for="remember">Запомняне?</label>
+                <input type="submit" class="right" name="login" value="Влез" />
+                <a href="#" target="_blank">Забравена парола</a>
+            </form>
         </div>
     </body>
 </html>

@@ -1,3 +1,153 @@
 .panel {
-    
+    font-family: sans-serif;
+    border: 1px solid #354a5d;
+    margin: auto;
+    width: 600px;
+    padding: 15px 20px 30px;
+    box-sizing: border-box;
+}
+
+
+.column {
+    display: inline-table;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.column * {
+    height: 25px;
+    box-sizing: border-box;
+}
+
+.left {
+    padding-right: 10px;
+}
+
+.right {
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.right {
+    float: right;
+}
+
+form.column > legend, form.column > input[type=text], form.column > input[type=password], form.column > a {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form.column a, form.column a:visited, form.column label{
+    font-size: 12px;
+}
+
+form.column a, form.column a:visited {
+    text-align: right;
+}
+
+form.column > legend {
+    text-transform: uppercase;
+}
+
+.light {
+    background-color: #ececec;
+    color: #354a5d
+}
+
+.light * {
+    color: #354a5d
+}
+
+.dark {
+    background-color: #354a5d;
+    color: #fff;
+}
+
+.dark * {
+    color: #fff;
+}
+
+.light input[type=submit] {
+    width: 50%;
+    background-color: #ececec;
+    border: 2px solid #354a5d;
+    color: #354a5d;
+}
+
+.light input[type=submit]:hover {
+    background-color: #354a5d;
+    cursor: pointer;
+}
+
+.dark input[type=submit] {
+    width: 50%;
+    background-color: #354a5d;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.dark input[type=submit]:hover {
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+
+.dark input[type=checkbox] {
+    /* Hide default checkbox */
+    opacity: 0;
+}
+
+.dark label::before {
+    /* Checkbox border */
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border: 2px solid #fff
+}
+
+.dark label::after {
+    /* Checkbox checkmark */
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 9px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+
+    transform: rotate(-45deg);
+}
+
+.dark label {
+    position: relative;
+    top: -10px;
+}
+
+.dark label::before, .dark label::after {
+    position: relative;
+}
+
+/* Outer-box */
+.dark label::before {
+    top: 6px;
+    margin-right: 5px;
+    margin-left: -15px;
+}
+
+/* Checkmark */
+.dark label::after {
+    left: 4px;
+    top: 7px;
+}
+
+/* Hide the checkmark by default */
+.dark input[type=checkbox] + label::after {
+    content: none;
+}
+/* Unhide the checkmark on the checked state */
+.dark input[type=checkbox]:checked + label::after {
+    content: "";
 }
